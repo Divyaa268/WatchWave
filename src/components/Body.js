@@ -4,8 +4,8 @@ import MainContainer from './MainContainer'
 
 const Body = () => {
   return (
-    <div>
-      Body
+    <div className='flex'>
+      
       <SidePanel />
       <MainContainer />
     </div>
