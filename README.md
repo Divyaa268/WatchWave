@@ -3,6 +3,7 @@
   - Hamburger Icon
   - Logo
   - Search bar
+  - User Icon
   - login
   - LogOut
 - Body
