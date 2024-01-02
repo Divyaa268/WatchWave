@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 const SidePanel = () => {
 
@@ -13,8 +14,11 @@ const SidePanel = () => {
         
         <ul>
           <li className='flex'>
-            <img className='h-6 w-6' alt='home' src='https://static.thenounproject.com/png/3574480-200.png' /> 
-            Home</li>
+            <Link to = "/">
+            <img className='h-6 w-6' alt='home' src='https://static.thenounproject.com/png/3574480-200.png' />
+            Home
+            </Link>
+            </li>
           <li className='flex'>
           <img className='h-6 w-6' alt='home' src='https://static.thenounproject.com/png/4512655-200.png' /> 
             Shorts</li>
