@@ -25,7 +25,7 @@ const Header = () => {
     </div>
 
     <div className='col-span-10'>
-        <input className='ml-72 w-96 h-12 border border-gray-400 rounded-l-full text-center hover:border-gray-800' type='text' placeholder='what would you like to watch today?'></input>
+        <input className='ml-72 w-96 h-12 border border-gray-400 rounded-l-full text-center hover:border-gray-800' type='text' placeholder='🔍what would you like to watch today?'></input>
         <button className='bg-red-600 rounded-r-full p-3 h-12 border border-red-600 hover:bg-red-500'>Search</button>
 
     </div>
