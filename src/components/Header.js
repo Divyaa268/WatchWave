@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../utils/appSlice';
 import { YOUTUBE_SEARCH_API } from '../utils/constants';
+import { json } from 'react-router-dom';
+import { cacheResults } from '../utils/searchSlice';
 
 const Header = () => {
 
@@ -15,6 +17,12 @@ const Header = () => {
   // show/unshow search results
   const [ showSuggestions, setShowSuggestions ] = useState(false);
 
+  // subscribing to the portion of the store to access the cache
+  const searchCache = useSelector((store) => store.search);
+
+  // Dispatching an action for toggle sidePanel menu
+  // dispatching an action to update the cache 
+  const dispatch = useDispatch();
 
 
 useEffect(() => {
@@ -23,7 +31,18 @@ useEffect(() => {
   //  then decline api call 
   // else make api call and show suggestions in  search bar
 
-  const timer = setTimeout(() => getSearchSuggestions(), 200);
+  const timer = setTimeout(() =>
+  {
+  if(searchCache[searchText])
+  {
+    setSuggestions(searchCache[searchText]);
+  }
+  else
+  {
+  getSearchSuggestions()
+  } 
+},
+  200);
   
   return () => {
     clearTimeout(timer);
@@ -44,10 +63,11 @@ const getSearchSuggestions = async () => {
   // setting suggestions after fetching data from the API
   setSuggestions(json[1]);
 
-};
+  dispatch(cacheResults({
+    [searchText]: json[1],
+  }));
 
-    // Dispatching an action for toggle sidePanel menu
-    const dispatch = useDispatch();
+};
 
     const toggleMenuHandler = () => {
         dispatch(toggleMenu());
