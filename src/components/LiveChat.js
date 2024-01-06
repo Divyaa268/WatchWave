@@ -3,6 +3,7 @@ import ChatMessage from './ChatMessage'
 import { useDispatch, useSelector } from 'react-redux';
 import { addMessage } from '../utils/chatSlice';
 import store from '../utils/store';
+import { generate , generateRandomQuote } from '../utils/helper';
  
 const LiveChat = () => {
 
@@ -16,8 +17,8 @@ const LiveChat = () => {
             console.log("API Polling");
 
             dispatch(addMessage({
-                name: "Divya",
-                message:"Gotta work!"
+                name: generate(),
+                message: generateRandomQuote()
             }))
         }, 2000);
 
@@ -25,9 +26,10 @@ const LiveChat = () => {
     }, []);
 
   return (
-    <div className='p-2 m-2 w-full h-[590px] border border-black bg-slate-100 rounded-lg overflow-y-scroll'>
-       <h3 className='font-bold py-2 px-2'>Live Chat</h3> 
-
+    
+    <div className='p-2 m-2 w-full h-[590px] border border-black bg-slate-100 rounded-lg overflow-y-scroll shadow-md flex flex-col-reverse'>
+        <h3 className='font-bold py-2 px-2'>Live Chat</h3> 
+        <div className=''>
         {/* <ChatMessage 
             name="Divya"
             message="Working on Namaste React!🙏" /> */}
@@ -37,6 +39,8 @@ const LiveChat = () => {
                 name={m.name}
                 message={m.message} />
             ))}
+
+        </div>
       
     </div>
   )
