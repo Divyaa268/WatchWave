@@ -18,9 +18,9 @@
       - channel name
       - views
       - date of upload
-  #Live Chat
+- Live Chat
    - Message Container
    - Display Live Messages
    - Send Message
-  # N-Level Deep Comments
+- N-Level Deep Comments
 
