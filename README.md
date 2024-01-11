@@ -38,7 +38,7 @@ WatchWave is a robust video streaming platform developed with cutting-edge techn
 - N-Level Deep Comments container
 
 
-# Glimpse of the App 0
+# Glimpse of the App :
 
 ![image](https://github.com/Divyaa268/WatchWave/assets/117614772/f1efef27-ae08-4889-b030-f5f685fc09ab)
 
