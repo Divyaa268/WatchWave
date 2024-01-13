@@ -7,37 +7,37 @@ import React from 'react'
 const commentsData = [
     {
         name: "Akshay Saini",
-        text: "Hellooo",
+        text: "Amazing Video!😍",
         replies: [
 
         ]
     },
     {
         name: "Divya",
-        text: "Byeeee",
+        text: "What a videeoooo🍿",
         replies: [
             {
-                name: "Akshay Saini",
-                text: "Hellooo",
+                name: "Tanya Styles",
+                text: "When can we expect another video?😎",
                 replies: [
         
                 ]
             },
             {
-                name: "Akshay Saini",
-                text: "Hellooo",
+                name: "Soham Mukherjee",
+                text: "Please don't spread negativity with such videos😡",
                 replies: [
                     {
-                        name: "Akshay Saini",
-                        text: "Hellooo",
+                        name: "Siddharth",
+                        text: "True that!😵‍💫",
                         replies: [
                             {
-                                name: "Akshay Saini",
-                                text: "Hellooo",
+                                name: "Seema Srivastava",
+                                text: "You need to change your perspective🤓🧐",
                                 replies: [
                                     {
-                                        name: "Akshay Saini",
-                                        text: "Hellooo",
+                                        name: "Ajai Kumar",
+                                        text: "I agree with you, Seema🤭",
                                         replies: [
                                 
                                         ]
@@ -57,8 +57,8 @@ const commentsData = [
         ]
     },
     {
-        name: "Akshay Saini",
-        text: "Hellooo",
+        name: "Puja Bharti",
+        text: "Let's gooooooo!💃💃💃",
         replies: [
 
         ]

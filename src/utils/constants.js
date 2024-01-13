@@ -8,3 +8,22 @@ GOOGLE_API_KEY;
 export const YOUTUBE_SEARCH_API = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const OFFSET_LIVE_CHAT = 20;
+
+
+
+// let name = {
+//     first: "Akshay",
+//     last: "Saini",
+// }
+
+// let printFullName = function(hometown, state) {
+//     console.log(this.first + " " + this.last + " from" + hometown + ", " + state);
+// }
+
+// printFullName.call(name, "Dehradun", "Uttrakhand");
+
+// printFullName.apply(name, ["Dehradun", "Uttrakhand"]);
+
+// let printMyName = printFullName.bind(name, "Dehradun", "Uttrakhand");
+// console.log(printMyName);
+// printMyName();

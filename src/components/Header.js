@@ -105,13 +105,11 @@ const getSearchSuggestions = async () => {
       <div className='fixed bg-white ml-72 px-2 w-[28rem] shadow-lg rounded-lg border border-gray-100 '>
           {suggestions.map((s) => (
             <ul key= {s} className='py-2 px-2 shadow-sm hover:bg-gray-100'>
-           🔍{s} 
+           🔍 {s} 
            </ul>
           ))
           }
 
-          {/* <li className=' py-2 shadow-sm hover:bg-gray-100'>🔍 iphone</li>
-          <li className=' py-2 shadow-sm  hover:bg-gray-100'>🔍 iphone</li> */}
       </div>
       )}
     </div>
